@@ -1,20 +1,46 @@
 /*!
- * Theme Name:       Exhale - Via
- * Description:      A child theme for the Exhale theme by Justin Tadlock.
- * Version:          1.0.0
- * Author:           Steffen Bang Nielsen
- * Author URI:       https://retrofitter.dk
- * Tags:             custom-colors, custom-menu, featured-images, one-column, theme-options, threaded-comments, translation-ready
- * Template:         exhale
- * Text Domain:      exhale-via
- * Domain Path:      /public/lang
- * Requires PHP:     5.6
- * Release Asset:    true
- * License:          GNU General Public License v3.0 or later
- * License URI:      https://www.gnu.org/licenses/gpl-3.0.html
- */
+* Theme Name:       Exhale - Via
+* Description:      A child theme for the Exhale theme by Justin Tadlock.
+* Version:          1.0.0
+* Author:           Steffen Bang Nielsen
+* Author URI:       https://retrofitter.dk
+* Tags:             custom-colors, custom-menu, featured-images, one-column, theme-options, threaded-comments, translation-ready
+* Template:         exhale
+* Text Domain:      exhale-via
+* Domain Path:      /public/lang
+* Requires PHP:     5.6
+* Release Asset:    true
+* License:          GNU General Public License v3.0 or later
+* License URI:      https://www.gnu.org/licenses/gpl-3.0.html
+*/
 
 /* ============================================================================
- = This file is not loaded by default. To load it, uncomment the code in the
- = `functions.php` file.
+= This file is not loaded by default. To load it, uncomment the code in the
+= `functions.php` file.
 ============================================================================ */
+
+.site-info p {
+  font-family: var(--font-family-secondary);
+  font-size: 16px;
+  margin: 0 .5em 1em;
+}
+
+.app-footer .menu--social .menu__items {
+  text-align: unset;
+}
+
+.app-footer__credit {
+  text-align: unset;
+  margin-left: .5em;
+}
+
+@media only screen and ( min-width: 650px ) {
+  .app-footer .wrapper {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .app-footer .wrapper:first-child {
+    float: right;
+  }
+}

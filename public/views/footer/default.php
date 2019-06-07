@@ -1,7 +1,13 @@
 <footer class="app-footer">
-	<?php Exhale\Template\Footer::displayCredit() ?>
-	<?php the_biz_info(array('4', '<div id="biz-info>', '</div>')) ?>
-	<?php Hybrid\View\display( 'nav/menu', 'social', [ 'location' => 'social' ] ) ?>
+  <div class="wrapper">
+    <?php Exhale\Template\Footer::displayCredit() ?>
+    <?php Hybrid\View\display( 'nav/menu', 'social', [ 'location' => 'social' ] ) ?>
+  </div>
+  <?php $attr = array (
+    'before' => '<div class="wrapper">',
+    'after'  => '</div>'
+  );
+  the_biz_info($attr) ?>
 </footer>
 </div><!-- .app -->
 <?php wp_footer() ?>
